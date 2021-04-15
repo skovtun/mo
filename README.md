@@ -22,7 +22,7 @@ The following steps were taken:
 
 7. npm i -D react react-dom
 
-8. Add to the index.js:
+8. Insert into index.js:
 
 ```javascript
 import React from "react"
@@ -35,8 +35,8 @@ const App = () => {
 }
 ```
 
-9. Create 'index.html; in the crs
-10. Add to index.html:
+9. Create 'index.html; in the 'src'
+10. Insert into index.html:
 
 ```html
 <!doctype html>
@@ -54,14 +54,14 @@ const App = () => {
 </html>
 ```
 
-11. Дописать в index.js:
+11. Add to index.js:
 
 ```javascript
 ReactDOM.render(<App />, document.getElementById("root"))
 ```
 
-12. Создать в корне файл webpack.config.js
-13. Поместить в webpack.config.js:
+12. Create 'webpack.config.js' in the 'src'
+13. Insert into webpack.config.js:
 
 ```javascript
 const HtmlWebPackPlugin = require("html-webpack-plugin")
