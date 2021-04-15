@@ -1,5 +1,4 @@
-# mo
-Webpack + Babel + React + ESLint initial setup.
+#Webpack + Babel + React + ESLint initial setup.#
 
 The following steps were taken:
 
@@ -9,12 +8,14 @@ The following steps were taken:
 3. Create a file in root directory '.babelrc'
 4. Add to the .babelrc:
 
+```json
 {
   "presets": [
     "@babel/preset-env",
     "@babel/preset-react"
   ]
 }
+```
 
 5. Create a folder 'src'
 6. Create the 'index.js' file in the 'src' folder 
@@ -26,15 +27,18 @@ The following steps were taken:
 import React from "react"
 import ReactDOM from "react-dom"
 
+```javascript
 const App = () => {
     return (
       <p>It works!</p
     )
 }
+```
 
 9. Create 'index.html; in the crs
 10. Add to index.html:
 
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -48,10 +52,13 @@ const App = () => {
     <div id="root"></div>
 </body>
 </html>
+```
 
 11. Дописать в index.js:
 
+```javascript
 ReactDOM.render(<App />, document.getElementById("root"))
+```
 
 12. Создать в корне файл webpack.config.js
 13. Поместить в webpack.config.js:
@@ -60,6 +67,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
+```json
 module.exports = {
     output: {
         path: path.resolve(__dirname, "build"),
@@ -113,16 +121,19 @@ module.exports = {
         port: 5000
     }
 }
-
+```
 
 14. npm i -D webpack-dev-server
 
 15. In the 'package.json' add to '"scripts":' follow:
 
+```json
 "start": "webpack serve --mode development --open",
 "build": "webpack --mode production",
+```
 
 16. npm i -D html-webpack-plugin html-loader
 17. npm i -D file-loader
 18. npm i -D node-sass sass-loader css-loader mini-css-extract-plugin
 19. npm i -D eslint
+20. npm eslint --init
