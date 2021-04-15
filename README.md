@@ -1,4 +1,4 @@
-#Webpack + Babel + React + ESLint initial setup.#
+# Webpack + Babel + React + ESLint initial setup #
 
 The following steps were taken:
 
@@ -67,7 +67,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
-```json
+```javascript
 module.exports = {
     output: {
         path: path.resolve(__dirname, "build"),
@@ -122,7 +122,6 @@ module.exports = {
     }
 }
 ```
-
 14. npm i -D webpack-dev-server
 
 15. In the 'package.json' add to '"scripts":' follow:
