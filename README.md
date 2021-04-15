@@ -28,9 +28,7 @@ import ReactDOM from "react-dom"
 
 const App = () => {
     return (
-        <>
-            <h1>It Works!</h1>
-        </>
+      <p>It works!</p
     )
 }
 
