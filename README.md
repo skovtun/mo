@@ -24,10 +24,10 @@ The following steps were taken:
 
 8. Add to the index.js:
 
+```javascript
 import React from "react"
 import ReactDOM from "react-dom"
 
-```javascript
 const App = () => {
     return (
       <p>It works!</p
@@ -63,11 +63,11 @@ ReactDOM.render(<App />, document.getElementById("root"))
 12. Создать в корне файл webpack.config.js
 13. Поместить в webpack.config.js:
 
+```javascript
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
-```javascript
 module.exports = {
     output: {
         path: path.resolve(__dirname, "build"),
